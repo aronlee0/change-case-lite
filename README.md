@@ -1,6 +1,6 @@
 # transform-case
 
-English | [中文简体](README.cn.md)
+<!-- English | [中文简体](README.cn.md) -->
 
 Lite package() for transfrom cases, and more performance than other packages.
 
