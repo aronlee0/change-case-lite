@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Case</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Examples</h1>
+      <div class="content">
+        <div class="show-area">
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="inputStr"> const inputStr = </label>
+
+            <div class="relative flex-1 placeholder" id="placeholder">
+              <div class="absolute top-0 right-0 left-0 flex-1 input-wrap" id="input-wrap">
+                <input class="flex-1 input" type="text" id="inputStr" autocomplete="off" />
+                <div class="suggestions" id="inputStrSuggestion"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="inputStr">
+              <!-- <div class="flex-1">
+                <div class="text">Use Options</div>
+              </div> -->
+              <div class="flex-none">const options =</div>
+            </label>
+
+            <div class="flex-1 flex items-center">
+              <span class="opt-item">{</span>
+              <span class="flex-none opt-item">locales:</span>
+              <input
+                class="flex-1 input with-border opt-item"
+                type="text"
+                placeholder='default"undefined", en, tr, ru'
+                id="optionsLocales"
+              />
+              <span class="opt-item">}</span>
+            </div>
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="camelCase" id="camelCaseLabel"> Case(inputStr).camelCase() => </label>
+            <input class="flex-1 input" type="text" readonly id="camelCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="capitalCase" id="capitalCaseLabel">
+              Case(inputStr).capitalCase() =>
+            </label>
+            <input class="flex-1 input" type="text" readonly id="capitalCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="cobolCase" id="cobolCaseLabel"> Case(inputStr).cobolCase() => </label>
+            <input class="flex-1 input" type="text" readonly id="cobolCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="constantCase" id="constantCaseLabel">
+              Case(inputStr).constantCase() =>
+            </label>
+            <input class="flex-1 input" type="text" readonly id="constantCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="dotCase" id="dotCaseLabel"> Case(inputStr).dotCase() => </label>
+            <input class="flex-1 input" type="text" readonly id="dotCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="kebabCase" id="kebabCaseLabel"> Case(inputStr).kebabCase() => </label>
+            <input class="flex-1 input" type="text" readonly id="kebabCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="noCase" id="noCaseLabel"> Case(inputStr).noCase() => </label>
+            <input class="flex-1 input" type="text" readonly id="noCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="pascalCase" id="pascalCaseLabel">
+              Case(inputStr).pascalCase() =>
+            </label>
+            <input class="flex-1 input" type="text" readonly id="pascalCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="pascalSnakeCase" id="pascalSnakeCaseLabel">
+              Case(inputStr).pascalSnakeCase() =>
+            </label>
+            <input class="flex-1 input" type="text" readonly id="pascalSnakeCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="pathCase" id="pathCaseLabel"> Case(inputStr).pathCase() => </label>
+            <input class="flex-1 input" type="text" readonly id="pathCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="snakeCase" id="snakeCaseLabel"> Case(inputStr).snakeCase() => </label>
+            <input class="flex-1 input" type="text" readonly id="snakeCase" />
+          </div>
+
+          <div class="flex items-center form-item">
+            <label class="text-right label" for="trainCase" id="trainCaseLabel"> Case(inputStr).trainCase() => </label>
+            <input class="flex-1 input" type="text" readonly id="trainCase" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="index.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 20px;
+  color: rgb(38, 110, 110);
+}
+
+body {
+  padding-bottom: 36px;
+}
+
+code {
+  background-color: #e1e1e1;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+ul {
+  /* list-style-type: none; */
+  /* padding: 0; */
+  margin: 0;
+}
+
+ul li {
+  padding: 4px 0;
+}
+
+p {
+  margin: 0 0;
+  padding: 8px 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-none {
+  flex: none;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0;
+}
+.right-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.left-0 {
+  left: 0;
+}
+
+.show-area {
+  /* min-width: 640px; */
+  padding-right: 36px;
+}
+
+.form-item {
+}
+
+.form-item + .form-item {
+  margin-top: 16px;
+}
+
+.label {
+  width: 400px;
+  padding-right: 4px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  font-size: 20px;
+
+  /* border: 1px solid rgb(38, 110, 110); */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: rgba(139, 253, 253, 0.2);
+  outline: none;
+}
+
+.input[readonly] {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid transparent;
+  /* cursor: not-allowed; */
+}
+
+.placeholder {
+  height: 33px;
+  width: 100%;
+}
+
+.input-wrap {
+  border: 1px solid rgb(38, 110, 110);
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition-property: box-shadow, height;
+  transition-duration: 200ms;
+  transform: matrix3d(0, 0, 0);
+  /* height: 33px; */
+}
+.input-wrap .input {
+  border: none;
+  border-radius: 0;
+}
+
+.input-wrap .suggestions {
+  height: 0;
+}
+
+.input-wrap.focused {
+  background-color: #fff;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+  /* height: 115px; */
+}
+
+.input-wrap.focused .suggestions {
+  height: auto;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.input-wrap.focused .input {
+  border-bottom: 1px solid rgba(38, 110, 110, 0.2);
+}
+
+.suggestions {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.suggestions-item {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #343434;
+}
+
+.suggestions-item:hover {
+  background-color: #f1f1f1;
+}
+
+.with-border {
+  border: 1px solid rgb(38, 110, 110);
+}
+
+.opt-item + .opt-item {
+  margin-left: 10px;
+}
