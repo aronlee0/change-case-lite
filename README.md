@@ -1,19 +1,19 @@
-# transform-case
+# change-case-lite
 
 <!-- English | [中文简体](README.cn.md) -->
 
-Lite package() for transfrom cases, and more performance than other packages.
+Lite package(`2.2 KiB` size packed) for transfrom cases, and more performance than other packages.
 
 ## install
 
 ```bash
-npm i transform-case
+npm i change-case-lite
 ```
 
 ## Usage
 
 ```typescript
-import { Case, camelCase } from "transform-case";
+import { Case, camelCase } from "change-case-lite";
 
 // first way.
 Case("hello world").camelCase(); // => "helloWorld"
@@ -39,7 +39,7 @@ camelCase("hello world"); // => "helloWorld"
 |    Case("Hello, World!").snakeCase();    |   hello_world |
 |    Case("Hello, World!").trainCase();    |   Hello-World |
 
-For more examples, you can clone to local and install, run `npm run dev` and open browser to
+For more examples, you can clone to local and install, run `npm run dev` and open browser to see more detail.
 
 ## With options
 
