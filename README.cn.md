@@ -2,7 +2,7 @@
 
 <!-- English | [中文简体](README.cn.md) -->
 
-Lite package(`2.2 KiB` size packed) for transfrom cases, and more performance than other packages.
+Lite package(`2.2 KiB` size packed) for change cases
 
 ## install
 
